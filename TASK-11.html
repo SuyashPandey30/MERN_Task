@@ -3,17 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task-11</title>
+    <title>CSS - Task 6</title>
     <style>
+      .img	{
+        	display: flex; 
+            min-height: 10vh; 
+            margin: 5em;
+       }
+       body {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; 
+            margin: 0; 
+        }
       .inputLabel {
         text-align: center;
-        font-family: sans-serif;
+        font-family:sans-serif;
         font-weight: bold;
         font-size: 10pt;
       }
 
       .inputField {
-        font-family: sans-serif;
+        font-family:sans-serif;
         border: 1px solid rgb(200, 200, 200);
         display: block;
         padding: 5px;
@@ -22,7 +35,7 @@
       }
 
       .login {
-        font-family: sans-serif;
+        font-family:sans-serif;
         color: white;
         background-color: rgb(73, 144, 73);
         border: 1px solid rgb(200, 200, 200);
@@ -32,7 +45,7 @@
       }
 
       .rememberMe {
-        font-family: sans-serif;
+        font-family:sans-serif;
         margin-bottom: 20px;
       }
 
@@ -43,8 +56,7 @@
       }
 
       .cancel {
-        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-family:sans-serif;
         color: white;
         background-color: rgb(240, 32, 32);
         border: 1px solid rgb(200, 200, 200);
@@ -57,41 +69,32 @@
 
       .forgotPass {
         float: right;
-        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-family: sans-serif;
         font-size: 9pt;
         margin-top: 25px;
       }
       .user-image {
-            max-width: 14%; 
+            max-width: 15%; 
             height: auto;
-        }
-       .img	{
-        	display: flex; 
-            min-height: 10vh; 
-            margin: 5em;
-       }
+            margin-left:48em; 
+      }
     </style>
   </head>
   <body>
   <div class="img">
-  <img class="user-image" src="https://cdn4.iconfinder.com/data/icons/green-shopper/1068/user.png" alt="User Icon" />
+          <img class="user-image" src="https://cdn4.iconfinder.com/data/icons/green-shopper/1068/user.png" alt="User Icon" />
   </div>
-    <form action="">
+    <form action="" class="form-container">
       <div>
         <label for="" class="inputLabel">Username</label>
         <input type="text" placeholder="Enter Username" class="inputField" />
       </div>
-
       <div>
         <label for="" class="inputLabel">Password</label>
         <input type="password" placeholder="Enter Password" class="inputField" />
       </div>
-
       <input type="button" value="Login" class="login" />
-
       <div><input type="checkbox" class="rememberMe" />Remember me</div>
-
       <div class="moreOptions">
         <input type="button" class="cancel" value="Cancel" />
         <p class="forgotPass">Forgot <a href="">Password?</a></p>
